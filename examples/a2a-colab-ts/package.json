@@ -1,0 +1,29 @@
+{
+  "name": "a2a-colab-ts",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "description": "A2A Code Lab with TypeScript",
+  "type": "module",
+  "workspaces": [
+    "labs/*"
+  ],
+  "scripts": {
+    "format": "prettier --experimental-cli --write .",
+    "lint:fix": "eslint . --fix --ext .ts,.tsx && npm run format"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "eslint": "^9.24.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-license-header": "^0.8.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  },
+  "dependencies": {
+    "@a2a-js/sdk": "^0.3.4"
+  }
+}
